@@ -1,0 +1,7 @@
+Energon + MarkLayer source starter
+Original integration additions and modifications: Copyright 2026 Ben Kochavy.
+Ben Kochavy's contributions are licensed under Apache License 2.0.
+Energon upstream: Copyright (c) 2026 Trevin Chow, MIT (see ENERGON-LICENSE).
+MarkLayer upstream and integration source: Apache License 2.0 (see MARKLAYER-LICENSE).
+These notices do not relicense any upstream code. See each pinned upstream tree for additional notices.
+The starter redistributes no generated widget or bundled package code. Build your own v15 release from pinned inputs. Retain notices required by bundled dependencies if you distribute generated binaries.
