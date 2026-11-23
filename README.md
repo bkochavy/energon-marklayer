@@ -38,6 +38,16 @@ For local development only, use the upstream Energon instructions, apply D1 migr
 3. **Enable optional hosted feedback deliberately.** Set `COMMENTS_ENABLED=true` only for eligible public HTML after approving use of the hosted service. The default is off. Normal MarkLayer feedback needs no separate MarkLayer account or API key. For optional reviewer-name memory, apply migration 0029 and provide a dedicated random `COMMENTS_IDENTITY_SECRET` of at least 32 characters as a Worker secret. Ordinary reviews must still work without it.
 4. **Respect hosted storage.** Room data, uploads and realtime sync stay at `marklayer.app`. Energon permissions, backups and retention do not govern that hosted data; already-shared concrete room links may continue to work after Energon access changes. This starter does not deploy a MarkLayer backend, migrate rooms, or reproduce another instance's configuration or data.
 
+## Install the agent skill
+
+The source patch ships the **templates** for the instance-specific publishing and feedback skill, not a prebuilt plugin or access to an existing instance. In your configured deployment checkout, run `npm run skill:render` to generate the skill and its API reference. Use your own instance's `GET /v1/help` (`install`) or `/setup` to get the exact repository and skill name.
+
+> Install the generated Energon skill from my instance's deployment repository at user scope, using the repository and skill name shown by my instance. Ask me to approve the connection from its `/auth.md`. Never send my Energon token to MarkLayer.
+
+For clients supporting the Skills CLI: `npx skills add OWNER/DEPLOYMENT-REPO --skill GENERATED-SKILL-NAME -g`. Compatible clients can also install the generated plugin through their marketplace. For private repositories or other clients, follow the patched `INSTALL.md` for authenticated local-skill or API-only fallback; do not make the deployment repository public to install it.
+
+The generated skill covers publishing and ensuring a shared room (`POST /v1/comments` with `action:"ensure"`), authenticated room lookup (`GET /v1/comments?url=...`), reading the returned hosted feedback link without the Energon credential, and starting a fresh round when authorized (`action:"new"` with an idempotency key).
+
 ## Smoke-test the instance before claiming parity
 
 Run these checks on an explicitly approved fresh deployment with a disposable public HTML page you own. Use synthetic text, never customer material. Allow for the fact that viewing an eligible feedback URL may create a hosted room. Do not expose tokens in screenshots, logs, or browser URLs.
