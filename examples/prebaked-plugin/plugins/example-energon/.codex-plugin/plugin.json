@@ -1,0 +1,23 @@
+{
+  "name": "example-energon",
+  "version": "1.15.9",
+  "description": "Internal URLs for prototypes, markdown, and agent-made files so work can leave a session.",
+  "author": {
+    "name": "Energon",
+    "url": "https://source.example/example-org/energon"
+  },
+  "homepage": "https://energon.example",
+  "repository": "https://source.example/example-org/energon",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Energon",
+    "shortDescription": "Internal URLs so files and prototypes can leave a session.",
+    "developerName": "Energon",
+    "category": "Productivity",
+    "defaultPrompt": [
+      "Publish this prototype to Energon",
+      "Put this file on Energon so another agent can fetch it",
+      "Share this markdown on a stable Energon URL"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "skill": "example-energon",
+  "plugin": "example-energon",
+  "marketplace": "example-energon",
+  "origin": "https://energon.example",
+  "tokenEnv": "EXAMPLE_ENERGON_TOKEN",
+  "tokenPrefix": "ee_example_",
+  "product": "Energon",
+  "org": "Example organization",
+  "repo": "example-org/energon",
+  "marketplaceRepo": "example-org/energon",
+  "marketplaceUrl": "https://source.example/example-org/energon"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "example-energon",
+  "description": "Internal URLs for prototypes, markdown, and agent-made files so work can leave a session.",
+  "version": "1.15.9",
+  "author": {
+    "name": "Energon",
+    "url": "https://source.example/example-org/energon"
+  },
+  "homepage": "https://energon.example",
+  "repository": "https://source.example/example-org/energon",
+  "keywords": ["example-energon", "static-hosting", "preview", "publish"]
+}

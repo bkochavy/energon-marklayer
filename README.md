@@ -40,7 +40,7 @@ For local development only, use the upstream Energon instructions, apply D1 migr
 
 ## Install the agent skill
 
-The source patch ships the **templates** for the instance-specific publishing and feedback skill, not a prebuilt plugin or access to an existing instance. In your configured deployment checkout, run `npm run skill:render` to generate the skill and its API reference. Use your own instance's `GET /v1/help` (`install`) or `/setup` to get the exact repository and skill name.
+The source patch ships the **templates** for the instance-specific publishing and feedback skill. To see the actual generated layout, browse the [prebaked plugin reference](examples/prebaked-plugin/). It's a nonfunctional example with reserved hosts, not a configured or installable connection to an existing instance. In your configured deployment checkout, run `npm run skill:render` to generate the skill and its API reference. Use your own instance's `GET /v1/help` (`install`) or `/setup` to get the exact repository and skill name.
 
 > Install the generated Energon skill from my instance's deployment repository at user scope, using the repository and skill name shown by my instance. Ask me to approve the connection from its `/auth.md`. Never send my Energon token to MarkLayer.
 

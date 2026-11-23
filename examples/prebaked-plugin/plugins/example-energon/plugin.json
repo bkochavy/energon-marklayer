@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "example-energon",
+  "version": "1.15.9",
+  "description": "Publish with feedback, read comments, review changes, and share or revise prototypes, documents, and agent-made files.",
+  "author": {
+    "name": "Energon",
+    "url": "https://source.example/example-org/energon"
+  },
+  "homepage": "https://energon.example",
+  "repository": "https://source.example/example-org/energon",
+  "keywords": ["example-energon", "static-hosting", "preview", "publish"]
+}
